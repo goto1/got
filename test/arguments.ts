@@ -15,7 +15,7 @@ test('`url` is required', async t => {
 		// @ts-ignore Error tests
 		got(''),
 		{
-			instanceOf: TypeError,
+			instanceOf: URIError,
 			message: 'No URL protocol specified'
 		}
 	);
